@@ -18,6 +18,8 @@ Note: not all TP-Link routers support custom dynamic DNS entries
 
 5. It can also be called directly:
 `curl -u ":{CLOUDFLARE_TOKEN}" "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}"`
+Or with username as a get param as some clients only support a custom url:
+`curl "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}&username={CLOUDFLARE_TOKEN}"`
 
 # Notes
 Cloudflare have some information about other ways to do this here:
@@ -31,3 +33,10 @@ Authorization: Basic Base64({username}:{password})
 
 No-IP uses the same structure:
 https://dynupdate.no-ip.com/nic/update?hostname={hostname}&myip={new_ip}
+
+# Change log
+1.0.1
+- Add username parameter to query string
+
+1.0.0
+- Initial version

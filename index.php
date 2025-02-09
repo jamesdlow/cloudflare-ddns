@@ -1,7 +1,7 @@
 <?php
 /*
  *	Name: Cloudfare DDNS
- *	Version: 1.0.0
+ *	Version: 1.0.1
  *	URI: https://github.com/jamesdlow/cloudflare-ddns
  *	Description: A simple PHP script that takes standard DDNS params and then updates the Cloudfare API
  *	Author: James Low
@@ -112,7 +112,7 @@ class CloudflareDDNS {
 			self::error('nohost', 'Hostname not specified');
 		}
 		$myip = $_GET['myip'] ?? self::getClientIP();
-		$token = self::getToken();
+		$token = $_GET['password'] ?? self::getToken();
 		if (!$token) {
 			self::error('badauth', 'HTTP basic auth not provided');
 		}
