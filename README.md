@@ -34,6 +34,8 @@ HTTP Basic Auth:
 No-IP uses the same structure:  
 https://dynupdate.no-ip.com/nic/update?hostname={hostname}&myip={new_ip}
 
+The myip parameter is optional, if it's not specified the IP is deteced from the client request.
+
 # Change log
 1.0.1
 - Add username parameter to query string
