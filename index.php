@@ -2,7 +2,7 @@
 /*
  *	Name: Cloudfare DDNS
  *	Version: 1.0.1
- *	URI: https://github.com/jamesdlow/cloudflare-ddns
+ *	URI: https://github.com/jamesdlow/cloudflare-ddns-php
  *	Description: A simple PHP script that takes standard DDNS params and then updates the Cloudfare API
  *	Author: James Low
  *	Author URI: https://jameslow.com
