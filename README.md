@@ -29,7 +29,7 @@ DynDNS URL is as follows:
 https://members.dyndns.org/nic/update?hostname={hostname}&myip={new_ip}
 
 HTTP Basic Auth:  
-Authorization: Basic Base64({username}:{password})
+`Authorization: Basic Base64({username}:{password})`
 
 No-IP uses the same structure:  
 https://dynupdate.no-ip.com/nic/update?hostname={hostname}&myip={new_ip}
