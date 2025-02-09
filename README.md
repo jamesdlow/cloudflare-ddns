@@ -14,6 +14,8 @@ https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 - Password: {CLOUDFLARE_TOKEN}
 - Hostname: {HOSTNAME}
 
+Note: not all TP-Link routers support custom dynamic DNS entries
+
 5. It can also be called directly:
 `curl -u ":{CLOUDFLARE_TOKEN}" "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}"`
 
