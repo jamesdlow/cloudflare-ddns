@@ -15,7 +15,7 @@ https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 - Hostname: {HOSTNAME}
 
 5. It can also be called directly:
-curl -u ":{CLOUDFLARE_TOKEN}" "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}"
+`curl -u ":{CLOUDFLARE_TOKEN}" "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}"`
 
 # Notes
 Cloudflare have some information about other ways to do this here:
