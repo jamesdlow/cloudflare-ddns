@@ -1,7 +1,7 @@
 # cloudflare-ddns
 A simple PHP script that takes standard Dyanmic DNS params and then updates the Cloudfare API
 
-# Instructions
+# Setup
 1. Upload index.php to where you want to run the script.
 
 2. Create a Cloudflare API token by following the URL below. You should be able to restrict to  just the DNS zone you want to update.  
@@ -20,6 +20,16 @@ Note: not all TP-Link routers support custom dynamic DNS entries
 `curl -u ":{CLOUDFLARE_TOKEN}" "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}"`  
 Or with username as a get param as some clients only support a custom url:  
 `curl "https://{PATH_TO_SCRIPT}?hostname={HOSTNAME}&username={CLOUDFLARE_TOKEN}"`
+
+# Errors
+We have tried to implement DynDNS responses as much as possible, while logging detailed errors with error_log(). DynDNS sends status 200 with the following text responses:
+| Response    | Description                 |
+| ----------- | --------------------------- |
+| badauth     | Invalid or missing token    |
+| nohost      | Invalid or missing hostname |
+| 911         | Error updating              |
+| good {IP}   | IP Updated                  |
+| nochg {IP}  | No Change                   |
 
 # Notes
 Cloudflare have some information about other ways to do this here:  
