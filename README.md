@@ -1,4 +1,4 @@
-# cloudflare-ddns
+# cloudflare-ddns-php
 A simple PHP script that takes standard Dyanmic DNS params and then updates the Cloudfare API
 
 # Setup
